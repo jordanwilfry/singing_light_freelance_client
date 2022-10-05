@@ -1,0 +1,319 @@
+.individualProductContainer {
+  margin: 100px auto 0px;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.individualProductContainerLeft {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 20px;
+}
+
+.individualProductContainerLeftImage {
+  width: 90%;
+  height: min(55vh, 350px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 5px 0.1px gray;
+}
+
+.individualProductContainerLeftSmallDescription {
+  align-self: flex-start;
+  font-size: 20px;
+  margin: 10px 30px;
+}
+
+.individualProductContainerLeftAbout {
+  margin: 20px;
+}
+
+.individualProductContainerLeftAboutTitle,
+.individualProductContainerLeftReviewTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.individualProductContainerLeftAboutDescription,
+.individualProductContainerLeftReviewContainerMessage,
+.individualProductContainerLeftReviewContainerResponseMessage {
+  text-align: justify;
+}
+
+.individualProductContainerLeftAboutDetail {
+  margin-top: 5px;
+}
+
+#individualProductContainerRightResponsive {
+  display: none;
+  margin-top: 15px;
+}
+
+.individualProductContainerLeftReviewContainer {
+  margin-left: 10px;
+  background-color: rgba(245, 245, 245, 0.5);
+  padding: 10px;
+  border-radius: 10px 15px;
+}
+
+.individualProductContainerLeftReviewContainerTop,
+.individualProductContainerLeftReviewContainerResponseTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.individualProductContainerLeftReviewContainerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.individualProductContainerLeftReviewContainerResponse {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.individualProductContainerRight {
+  flex: 3;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+}
+
+.individualProductContainerRightPrice {
+  width: fit-content;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.individualProductContainerRightDetail {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.individualProductContainerRightDetailItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.individualProductContainerRightUserDescription {
+  text-align: justify;
+  /* width: 94%; */
+  margin: auto;
+}
+
+.btn-warning {
+  margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .individualProductContainerRight {
+    display: none;
+  }
+
+  #individualProductContainerRightResponsive {
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .individualProductContainer {
+    margin: 100px 5px 0px;
+    width: 98%;
+  }
+
+  .individualProductContainerLeftAbout {
+    margin: 5px;
+  }
+
+  #individualProductContainerRightResponsive {
+    width: 100%;
+    margin: 30px 5px;
+  }
+}
+
+/* working with the individual chart model */
+.chartModelContainer {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.chartModelMainContainer {
+  background-color: white;
+  border-radius: 3px;
+  width: min(100%, 500px);
+  height: min(90vh, 800px);
+  border: 1px solid rgba(0, 0, 0, 0.203);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chartModelMainContainerHeader {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  height: 70px;
+  width: 100%;
+}
+
+.chartModelMainContainerHeaderClose {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.chartModelMainContainerHeaderUserInfos {
+  margin-left: 10px;
+}
+
+.chartModelMainContainerMessages {
+  padding-top: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 85px;
+}
+
+.chartModelMainContainerFiles {
+  position: absolute;
+  bottom: 75px;
+  height: 60px;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.chartModelMainContainerFile {
+  min-width: 30px ;
+  min-height: 30px ;
+  margin: 2px 4px;
+  background-color: rgba(67, 67, 67, 0.3);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.chartModelMainContainerFooter {
+  position: absolute;
+  display: flex;
+  padding: 10px 0px;
+  align-items: flex-end;
+  justify-content: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.337);
+  height: 75px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.chartModelMainContainerFooterAttachedFiles {
+  padding: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin: 0px 5px 0px 2px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartModelMainContainerFooterSendButton {
+  padding: 5px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.341);
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartModelMainContainerFooterInput {
+  resize: none;
+  height: 55px;
+  border: 1px solid rgba(128, 128, 128, 0.341);
+  width: 85%;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.341);
+}
+
+.chartModelMainContainerMessage {
+  padding: 3px;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 3px 5px;
+  width: fit-content;
+  word-break: break-all;
+  max-width: 70%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartModelMainContainerMessageOwner {
+  align-self: flex-end;
+  background-color: black;
+  color: white;
+}
+
+.chartModelMainContainerMessageTime {
+  font-size: 12px;
+  align-self: flex-end;
+  padding: 3px;
+}
+
+.chartModelMainContainerProgress {
+  height: 5px;
+}
+
+.chartModelMainContainerFiles::-webkit-scrollbar {
+  height: 10px;
+}
+.chartModelMainContainerFiles::-webkit-scrollbar-track {
+  width: 9px;
+  padding: 0px 2px;
+  background-color: rgb(243, 243, 243);
+}
+.chartModelMainContainerFiles::-webkit-scrollbar-thumb {
+  background-color: rgba(220, 220, 220, 0.713);
+  border-radius: 3px;
+}

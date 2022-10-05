@@ -1,0 +1,210 @@
+.createProjectContainer{
+    margin: 100px 5%  20px;
+    
+}
+
+.requiredField{
+    color: blue;
+}
+
+.createProjectTitle{
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid orange;
+}
+
+.createProjectForm{
+    box-shadow: 0px 0px 5px 0.1px gray;
+    width:max(60%, 600px);
+    height: fit-content;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    padding: 15px;
+    margin: auto;
+}
+
+.createProjectDescriptionTitle, .createProjectPictureTitle{
+    font-size: 19px;
+}
+
+.createProjectDescription{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.createProjectDescriptionNumberCharacters{
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.createProjectDescriptionTextArea{
+    resize: none;
+    width: 95%;
+    margin: auto;
+    padding: 5px 5px 20px; 
+    overflow-y: scroll;
+    height: 150px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.postRequestDescriptionAttacheFiles{
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    background-color: lightgray;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+.postRequestDescriptionFile{
+    display: none;
+}
+
+.postRequestDescriptionFileImage{
+    width: 200px;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 5px 20px;
+}
+
+.createProjectDescriptionSmallInputStart{
+    position: absolute;
+    top: 3px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.createProjectDescriptionSmallInput{
+    outline: none;
+    border: 1px solid lightgray;
+    width: 90%;
+    border-radius: 5px;
+    padding-left: 55px;
+    font-size: 20px;
+}
+
+.createProjectDescriptionDetailInput{
+    outline: none;
+    border: 1px solid lightgray;
+    width: 95%;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+
+.createProjectPicture{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.createProjectCategorie{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+
+.createProjectCategorieTitle{
+    font-size: 19px;
+}
+
+.selects{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.categoriSelect{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.createProjectCategorieCategorie, .createProjectCategorieSubCategorie{
+    height: 30px;
+    border-radius: 3px;
+}
+
+.createProjectCategorieDays, .createProjectCategorieBudget{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.createProjectCategorieDaysTitle, .createProjectCategorieBudgetTitle{
+    font-size: 19px;
+}
+
+.createProjectCategorieDaysInput, .createProjectCategorieBudgetInput{
+    height: 30px;
+    border-radius: 3px;
+    margin: 5px 10px 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+.createProjectCategorieSubmit{
+    display: flex;
+    justify-content: end;
+}
+
+.createProjectCategorieSubmit button{
+    width: fit-content;
+    padding: 5px;
+    border: 4px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+@media (max-width: 870px) {
+    .createProjectForm{
+        width: 90%;
+    }
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+
+#descriptionLenght, #smallDescriptionLenght, #descriptionMaxLenght, #smallDescriptionMaxLenght, #detailMaxLenght{
+    color: red;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+#projectCreationAllFieldRequired, #projectCreationSuccesful, #projectCreationFailed{
+    position: fixed;
+    top: 100px;
+    right: 5px;
+    display: none;
+    z-index: 5;
+}
+
+#projectCreationAllFieldRequired{
+      height: 50px;
+}

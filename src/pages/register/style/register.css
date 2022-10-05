@@ -1,0 +1,602 @@
+.loginContainer {
+  padding: 90px 100px;
+  height: 100vh;
+  background-image: url("../background/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.requiredField{
+    color: blue;
+}
+
+.logo-box {
+  background-color: rgba(0, 0, 0, 0.116);
+  border: none;
+  padding: 10px 5px;
+  margin-bottom: 0px;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: calc(100vh - 180px);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.form_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5% 4%;
+  flex-direction: column;
+}
+
+.form_items {
+  padding: 6%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_items form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form_items p {
+  align-self: center;
+  color: rgba(0, 0, 255, 0.658);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form_items button, .sumbitNumber {
+  margin: 5px;
+  padding: 0px;
+  font-size: 18px;
+  color: blue;
+  align-self: flex-end;
+  border: none;
+  background: transparent;
+}
+
+.form_items label {
+  font-size: 15px;
+}
+
+.form_items input, .form_items select, .form_items textarea{
+  padding: 2%;
+  border: 1px blue solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form_items input:focus, .form_items select:focus, .form_items textarea:focus {
+  outline: none;
+  background: rgba(0, 0, 255, 0.068);
+  border-radius: 5px;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+}
+
+.infos_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 5%;
+  background-image: url("../background/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 4px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.infos {
+  position: relative;
+  padding: 6%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+}
+
+.infos h1 {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  font-size: x-large;
+}
+
+.infos hr {
+  width: 6.5%;
+  align-self: flex-end;
+  border: #ffe47a 2px solid;
+  background-color: #ffe47a;
+  margin-bottom: 15px;
+  margin-top: 0;
+  margin-right: 50px;
+  opacity: 90%;
+}
+
+.individualPlateform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  margin: 15px auto;
+  /* max-width: 80%; */
+  background-color: #ffe47a1e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.individualPlateformIcon {
+  margin-right: 20px;
+}
+
+footer {
+  margin: 5px;
+  color: white;
+  font-weight: 800;
+}
+
+.privacy {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.registerResponsive {
+  display: none;
+}
+
+#show {
+  position: relative;
+  padding-right: 10%;
+}
+
+.Confirmshow {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#visibilityLI {
+  display: none;
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#visibilityOffLI {
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#visibilityLI1 {
+  display: none;
+  position: absolute;
+  top: 71%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#visibilityOffLI1 {
+  position: absolute;
+  top: 71%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.visibilityIcon {
+  color: blue;
+  font-size: 21px !important;
+}
+
+#wrongPassword {
+  color: rgba(255, 0, 0, 0.644);
+  font-size: 16;
+  opacity: 100%;
+}
+
+.alert-danger, .alert-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  margin-bottom: 15px;
+  opacity: 0;
+  cursor: default;
+}
+
+.alert-warning{
+    display: none;
+}
+
+.loginWithPlatformResposive,
+.logoResponsive,
+.loginResponsive,
+.theOrline {
+  display: none;
+}
+
+.loginWithPlatformResposiveIcon {
+  color: blue;
+  cursor: pointer;
+}
+
+/* responsiness */
+
+@media (max-width: 1100px) {
+  .loginHr {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .loginHr {
+    display: none;
+  }
+
+  boby {
+    font-size: xx-large;
+  }
+
+  .loginContainer {
+    padding: 200px 100px;
+    height: 100vh;
+  }
+
+  .main_container {
+    height: calc(100vh - 400px);
+  }
+}
+
+@media (min-height: 1500px) {
+  .loginContainer {
+    padding: 400px 100px;
+    height: 100vh;
+  }
+
+  .main_container {
+    height: calc(100vh - 800px);
+  }
+}
+
+@media (max-height: 600px) {
+  .loginContainer {
+    background-image: none;
+    background-color: white;
+  }
+
+  .main_container {
+    height: auto;
+    box-shadow: 0px 0px 5px 0.1px gray;
+  }
+}
+
+@media (max-width: 870px) {
+  .form_container {
+    flex-wrap: wrap;
+  }
+
+  body {
+    font-size: medium;
+    height: auto;
+  }
+
+  .privacy {
+    display: none;
+  }
+
+  .registerResponsive {
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    margin-top: 5px auto;
+    font-size: 15px;
+    color: black;
+    width: 80%;
+  }
+
+  .loginContainer {
+    padding: 50px;
+  }
+
+  .infos_container {
+    display: none;
+  }
+
+  .responsive_register {
+    opacity: 100%;
+  }
+
+  .form_items {
+    position: relative;
+  }
+  .responsiveBr {
+    display: none;
+  }
+
+  .logoResponsive {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .loginResponsive {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #ffe47a;
+  }
+
+  .loginWithPlatformResposive {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .theOrline {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .or {
+    margin: 0px 5px;
+  }
+
+  .orleft,
+  .orRight {
+    width: 40%;
+    height: 2px;
+    background-color: blue;
+  }
+
+  #visibilityLI {
+    display: none;
+    position: absolute;
+    top: 39%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  #visibilityOffLI {
+    position: absolute;
+    top: 39%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  #visibilityLI1 {
+    display: none;
+    position: absolute;
+    top: 71%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  #visibilityOffLI1 {
+    position: absolute;
+    top: 71%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 600px) {
+  .registerResponsive {
+    font-size: 10px;
+  }
+
+  .main_container {
+    height: auto;
+    background-color: rgba(0, 0, 255, 0.005);
+    margin: calc(100vh - 90vh) auto;
+    box-shadow: 0px 0px 5px 0.1px gray;
+  }
+
+  .loginContainer {
+    padding: 10px;
+    height: fit-content;
+    align-items: center;
+    background-image: none;
+  }
+
+  body {
+    font-size: small;
+    height: auto;
+    background-color: white;
+  }
+
+  html {
+    height: auto;
+    background-color: white;
+  }
+
+  .logoResponsive {
+    display: none;
+  }
+
+  .loginResponsive {
+    font-size: 15px;
+  }
+
+  .form_items button {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .loginWithPlatformResposiveIcon {
+    font-size: 15px !important;
+    margin-bottom: 10px;
+  }
+
+  .form_items label {
+    font-size: 10px;
+  }
+
+  .alert-danger, .alert-warning {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  #visibilityLI {
+    display: none;
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 15px !important;
+  }
+
+  #visibilityOffLI {
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 15px !important;
+  }
+
+  #visibilityLI1 {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 15px !important;
+  }
+
+  #visibilityOffLI1 {
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 15px !important;
+  }
+
+  .theOrline {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .loginContainer {
+    padding: 5px;
+  }
+
+  body {
+    font-size: xx-small;
+  }
+
+  .loginResponsive {
+    /* margin-bottom: 10px; */
+    font-size: 10px;
+  }
+
+  .form_items input {
+    width: auto;
+  }
+
+  .form_items button {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    font-size: 9px;
+  }
+
+  .form_items label {
+    font-size: 8px;
+  }
+
+  .loginWithPlatformResposiveIcon {
+    font-size: 10px !important;
+    margin-bottom: 10px;
+  }
+
+  .alert-danger, .alert-warning {
+    margin-bottom: 5px;
+    font-size: 8px;
+  }
+
+  #visibilityLI {
+    display: none;
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 10px !important;
+  }
+
+  #visibilityOffLI {
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 10px !important;
+  }
+
+  #visibilityLI1 {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 10px !important;
+  }
+
+  #visibilityOffLI1 {
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 10px !important;
+  }
+
+  .theOrline {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,120 @@
+.postRequestContainer{
+    margin: 100px 5%  20px;
+    
+}
+
+.postRequestTitle{
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid orange;
+}
+
+.postRequestForm{
+    box-shadow: 0px 0px 5px 0.1px gray;
+    width: 60%;
+    height: fit-content;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    padding: 15px;
+}
+
+.postRequestDescriptionTitle{
+    font-size: 19px;
+}
+
+.postRequestDescription{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.postRequestDescriptionNumberCharacters{
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.postRequestDescriptionTextArea{
+    resize: none;
+    width: 95%;
+    margin: auto;
+    padding: 5px 5px 20px; 
+    overflow-y: scroll;
+    height: 150px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.postRequestCategorie{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.postRequestCategorieTitle{
+    font-size: 19px;
+}
+
+.selects{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.categoriSelect{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.postRequestCategorieCategorie, .postRequestCategorieSubCategorie{
+    height: 30px;
+    border-radius: 3px;
+}
+
+.postRequestCategorieDays, .postRequestCategorieBudget{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.postRequestCategorieDaysTitle, .postRequestCategorieBudgetTitle{
+    font-size: 19px;
+}
+
+.postRequestCategorieDaysInput, .postRequestCategorieBudgetInput{
+    height: 30px;
+    border-radius: 3px;
+    margin: 5px 10px 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+.postRequestCategorieSubmit{
+    display: flex;
+    justify-content: end;
+}
+
+.postRequestCategorieSubmit button{
+    width: fit-content;
+    padding: 5px;
+    border: 4px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+@media (max-width: 870px) {
+    .postRequestForm{
+        width: 90%;
+    }
+  }

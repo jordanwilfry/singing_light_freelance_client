@@ -1,0 +1,239 @@
+.loginContainer {
+  padding: 50px 100px;
+  height: 100vh;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.required{
+    color: red;
+    font-size: smaller;
+    margin-bottom: 5px;
+    opacity: 0%;
+}
+
+/* responsiness */
+@media (min-width: 1500px) {
+  boby {
+    font-size: xx-large;
+  }
+
+  .loginContainer {
+    padding: 200px 100px;
+    height: 100vh;
+  }
+
+  .main_container {
+    height: calc(100vh - 400px);
+  }
+}
+
+@media (min-height: 1500px) {
+  .loginContainer {
+    padding: 400px 100px;
+    height: 100vh;
+  }
+
+  .main_container {
+    height: calc(100vh - 800px);
+  }
+}
+
+@media (max-height: 600px) {
+  .loginContainer {
+    background-image: none;
+    background-color: white;
+  }
+
+  footer {
+    margin: -10px 0px 10px 0px;
+  }
+
+  .main_container {
+    height: auto;
+    box-shadow: 0px 0px 5px 0.1px gray;
+  }
+}
+
+@media (max-width: 870px) {
+    .form_items input, .form_items select{
+        height: 8%;
+    }
+
+  .form_container {
+    flex-wrap: wrap;
+    padding: 0% 4%;
+  }
+
+  body {
+    font-size: small;
+    height: auto;
+  }
+
+  .privacy {
+    display: none;
+  }
+
+  .registerResponsive {
+    margin: 20px 0px -20px 0px;
+    font-size: 15px;
+  }
+
+  .loginContainer {
+    padding: 50px;
+  }
+
+  .infos_container {
+    display: none;
+  }
+
+  .responsive_register {
+    opacity: 100%;
+  }
+
+  .logoResponsive {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .loginResponsive {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #ffe47a;
+  }
+
+  .loginWithPlatformResposive {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  .registerResponsive {
+    font-size: 10px;
+  }
+
+  .main_container {
+    height: auto;
+    background-color: rgba(0, 0, 255, 0.005);
+    margin: calc(100vh - 90vh) auto;
+    box-shadow: 0px 0px 5px 0.1px gray;
+  }
+
+  .loginContainer {
+    padding: 10px;
+    height: fit-content;
+    align-items: center;
+    background-image: none;
+  }
+
+  body {
+    font-size: small;
+    height: auto;
+    background-color: white;
+  }
+
+  html {
+    height: auto;
+    background-color: white;
+  }
+
+  .logoResponsive {
+    display: none;
+  }
+
+  .loginResponsive {
+    font-size: 15px;
+  }
+
+  .form_items button {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .loginWithPlatformResposiveIcon {
+    font-size: 15px !important;
+    margin-bottom: 10px;
+  }
+
+  .form_items label {
+    font-size: 10px;
+  }
+
+  .alert-danger,
+  .alert-warning {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .form_container {
+    flex-wrap: wrap;
+    padding: 5% 4%;
+  }
+}
+
+@media (max-height: 600px) {
+  .form_container {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .loginContainer {
+    padding: 5px;
+  }
+
+  body {
+    font-size: xx-small;
+  }
+
+  .loginResponsive {
+    /* margin-bottom: 10px; */
+    font-size: 10px;
+  }
+
+  .form_items input {
+    width: auto;
+  }
+
+  .form_items button {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    font-size: 9px;
+  }
+
+  .form_items label {
+    font-size: 8px;
+  }
+
+  .loginWithPlatformResposiveIcon {
+    font-size: 10px !important;
+    margin-bottom: 10px;
+  }
+
+  .alert-danger,
+  .alert-warning {
+    margin-bottom: 5px;
+    font-size: 8px;
+  }
+
+  .theOrline {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loaderSampleBox {
+  width: fit-content;
+  height: fit-content;
+  padding: 2vw 3vw;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.loaderTitle{
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.loaderSubTitle{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(168, 168, 168);
+    margin-bottom: 10px;
+}

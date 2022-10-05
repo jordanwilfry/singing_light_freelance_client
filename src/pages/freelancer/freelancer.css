@@ -1,0 +1,161 @@
+.freelancerContainerTop{
+    width: 100%;
+    height: 100vh;
+    background-image: url("dribbble-shot_6.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.itemsNavItems{
+    font-weight: 600;
+}
+
+.freelancerContainerTopText{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 35%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.freelancerContainerTopText div{
+    margin: 10px;
+    text-shadow: rgb(0, 0, 0);
+}
+
+.freelancerContainerTopTextTop{
+    font-size: x-large;
+}
+
+.freelancerContainerTopInformations{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.freelancerContainerTopInformationsitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.freelancerContainerTopInformationsitem div{
+    margin: 5px;
+}
+
+.someFreelancerContainer{
+    margin: 30px auto;
+    width: 90%;
+}
+
+.someFreelancerTitle, .howItWorkTitle{
+    font-size: 25px;
+    border-bottom: 1px solid orange;
+    width: fit-content;
+}
+
+.someFreelancerContainerContain{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.howItWorkContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howItWorkContainerContain{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.howItWorkContainerContainItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.howItWorkContainerContainItemIcon{
+    font-size: 80px !important;
+    color: rgb(119, 119, 119);
+}
+
+.QandAContainerContain{
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+.accordion-item, .accordion-item:focus, .accordion-item:active,
+.accordion-header, .accordion-header:focus, .accordion-header:active,
+.accordion-button, .accordion-button:focus, .accordion-button:active {
+  
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+    background-color: rgba(255, 255, 255, 0.063);
+    color: black;
+}
+
+.accordion{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.accordion-item{
+    width: 45%;
+    margin: 10px;
+    height: fit-content;
+    border: 1px solid rgba(162, 162, 162, 0.323);
+}
+
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.131);
+}
+
+.accordion-item:not(:first-of-type){
+    border-top: 1px solid rgba(0, 0, 0, 0.124);
+}
+
+.accordion-item:hover{
+    border-left: 3px solid orange;
+}
+
+.accordion-item:focus {
+    border-left: 3px solid orange;
+    outline: unset;
+}
+
+@media (max-width: 700px){
+    .accordion-item{
+        width: 98%;
+    }
+
+    .howItWorkContainerContainItem{
+        width: 80%;
+        margin: 10px;
+    }
+}

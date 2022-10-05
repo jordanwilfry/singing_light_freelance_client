@@ -1,0 +1,13 @@
+@media (max-width: 870px) {
+    .form_items input, .form_items select{
+        height: auto;
+    }
+}
+
+#CodeSend{
+    display: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    opacity: 1;
+}

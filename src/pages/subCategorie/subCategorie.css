@@ -1,0 +1,125 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.subCategoryContainer {
+    margin: 100px auto;
+    width: 90%;
+    height: fit-content;
+}
+
+.subCategoryContainer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px auto 0px;
+}
+
+.subCategoryContainer ul li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+li.selected {
+    background-color: rgba(255, 224, 130, 0.348);
+}
+
+li a,
+li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.subCategoryContainer ul li.previous,
+.subCategoryContainer ul li.next {
+    width: fit-content;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+li.previous:hover,
+li.next:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subCategoryContainerTop {
+    box-shadow: 0px 0px 5px 0.1px gray;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.subCategoryContainerTopTitle {
+    margin: 10px 0px 10px 20px;
+}
+
+.subCategoryContainerTopContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+
+.subCategoryContainerMidle {
+    display: flex;
+    margin-top: 20px;
+}
+
+.subCategoryContainerMidleNav {
+    flex: 1;
+}
+
+.subCategoryContainerMidleContainer {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .subCategoryContainerMidleNav {
+        display: none;
+    }
+
+    .subCategoryContainer ul li {
+        margin: 2px;
+        padding: 3px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .subCategoryContainer ul {
+        width: initial;
+    }
+}
+
+@media (min-width: 1450px) {
+    .subCategoryContainer {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+    }
+}

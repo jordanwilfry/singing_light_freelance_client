@@ -1,0 +1,61 @@
+.slidePresentationContainer {
+  height: auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(82, 77, 62, 0.753),
+    rgb(255, 244, 210)
+  );
+  width: 94%;
+  margin: 30px auto;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  border-radius: 10px;
+  position: relative;
+}
+
+.carouselFlexImgText {
+  flex-direction: row-reverse;
+}
+
+.carouselImage {
+  width: 30%;
+  height: 150px;
+  float: right;
+  clear: both;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5px;
+  right: 30%;
+  padding: 2px 5px;
+}
+
+.carousel-indicators {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 2px 8px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(255, 211, 80);
+}
+
+@media (max-width: 500px) {
+    .carouselImage{
+        opacity: 0;
+    }
+
+    .carousel-caption{
+        right: 5%;
+    }
+}

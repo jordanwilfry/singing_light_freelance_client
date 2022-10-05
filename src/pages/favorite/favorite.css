@@ -1,0 +1,91 @@
+.favoriteContainer {
+  margin: 100px 5% 20px;
+}
+
+.favoriteTite {
+  font-size: 30px;
+}
+
+.titleHr {
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.idivitualTitle {
+  color: orange;
+  border-bottom: 2px solid orange;
+  padding-bottom: 5px;
+  width: fit-content;
+  z-index: 2;
+}
+
+.noFavorite {
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.noFavoriteContain {
+  font-size: 30px;
+  color: rgb(90, 90, 90);
+}
+
+.noFavoriteMore {
+  font-size: 20px;
+  padding: 4px 5px;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favoriteItems {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.recomendedTitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.favoriteRecomended {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.favoriteItems .ProductContainer,
+.favoriteRecomended .ProductContainer {
+  width: 23%;
+  margin-left: 0px;
+}
+
+@media (max-width: 1000px) {
+  .favoriteItems .ProductContainer,
+  .favoriteRecomended .ProductContainer {
+    width: 32%;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .favoriteItems .ProductContainer,
+  .favoriteRecomended .ProductContainer {
+    width: 40%;
+    margin-left: 0px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .favoriteItems .ProductContainer,
+  .favoriteRecomended .ProductContainer {
+    width: 90%;
+    margin-left: 0px;
+  }
+}

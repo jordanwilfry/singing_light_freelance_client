@@ -1,0 +1,92 @@
+.footerContainer{
+    background-color: #242222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+.footerMidle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 10px auto 30px auto;
+    flex-wrap: wrap;
+}
+
+.footerLogo{
+   margin-left: 8%;
+   width: 200px;
+   height: auto;
+   cursor: pointer;
+}
+
+.footermidleGroups{
+    margin: 10px 10px;
+}
+
+.footermidleGroupsTitle{
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footermidleGroupsItems{
+    font-size: medium;
+    margin: 5px;
+}
+
+.footerHr{
+    width: 86% ;
+    margin: auto;
+}
+
+.footerBottom{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerIcon{
+    margin: 20px 10px 0px;
+    font-size: 25px !important;
+}
+
+.footerIcon:hover{
+    color: rgb(255, 232, 189);
+    cursor: pointer;
+}
+
+.footermidleGroupsItems:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footerCopyright{
+    margin-top: 20px;
+}
+
+.footerCopRight span{
+    color: rgb(253, 244, 113);
+}
+
+.footerCopyright{
+    display: flex;
+}
+
+.footerCopyright div{
+    margin: 0px 10px;
+}
+
+.footerCopyright div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    
+}

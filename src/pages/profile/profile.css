@@ -1,0 +1,335 @@
+.profileContainer {
+  width: 94%;
+  margin: 100px auto 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.profileContainerRightprojetContainerNoproject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.profileContainerRightprojetContainerNoprojectText {
+  font-size: 30px;
+  color: rgb(130, 129, 129);
+  margin-bottom: 10px;
+}
+
+.profileContainerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  padding: 5px;
+}
+
+.profileContainerLeftTop {
+  width: 93%;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  padding: 10px;
+  padding-top: 25px;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.profileContainerLeftTopTop {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  width: 100px;
+}
+
+.profileOnline {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.profileContainerLeftTopItem {
+  margin: 8px 2px;
+}
+
+
+.profileContainerLeftTopItemContainer {
+  font-weight: 600;
+}
+
+.profileContainerLeftTopItemContainer:hover {
+  text-decoration: underline;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.languages:hover {
+  text-decoration: none;
+}
+
+.language {
+  margin: 5px;
+}
+
+.language:hover {
+  text-decoration: underline;
+}
+
+.profileContainerLeftPortfolio {
+  width: 93%;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.profileContainerLeftPortfolio:hover {
+  box-shadow: 0px 0px 5px 0.1px rgb(0, 0, 0);
+  transition: all 100ms;
+  cursor: pointer;
+  color: #000;
+}
+
+.profileContainerLeftBottom {
+  width: 93%;
+  box-shadow: 0px 0px 5px 0.1px gray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.profileContainerRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.profileContainerRightTop {
+  position: relative;
+  width: inherit;
+}
+
+.profileContainerRightCoverPicture {
+  box-shadow: 0px 0px 5px 0.1px gray;
+  margin: 10px auto;
+  border-radius: 10px;
+  height: 200px;
+  width: 98%;
+}
+
+.profileContainerRightProfilePicture {
+  position: absolute;
+  left: 45%;
+  top: 150px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileEdit {
+  position: absolute;
+  left: 45%;
+  top: 190px;
+  width: 40px;
+  height: 40px;
+  margin-left: 120px;
+  border-radius: 50%;
+  background-color: rgb(251, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(44, 40, 40);
+}
+
+.profileEdit:hover {
+  background-color: rgb(255, 225, 0);
+  cursor: pointer;
+}
+
+.profileContainerRightprojet {
+  /* box-shadow: 0px 0px 5px 0.1px gray; */
+  padding: 10px;
+  margin: 10px;
+  margin-top: 35px;
+  border-radius: 10px;
+  width: 98%;
+}
+
+.profileContainerRightprojetGig {
+  width: fit-content;
+  border-bottom: 1px solid orange;
+}
+
+.profileContainerRightprojetContainer .ProductContainer {
+  width: 30%;
+  margin-left: 0px;
+}
+
+.profileContainerLeftResponsive {
+  display: none;
+}
+
+.profileContainerLeftBottomTitle {
+  width: 100px;
+  border-bottom: 1px solid orange;
+}
+
+.profileContainerLeftBottomGroup {
+  padding: 10px;
+  width: inherit;
+}
+
+.profileContainerLeftBottomGroupTitle,
+.profileContainerLeftBottomGroupTitle_ {
+  margin-bottom: 5px;
+}
+
+.profileContainerLeftBottomGroupItem {
+  width: inherit;
+  overflow-wrap: break-word;
+  margin: 5px;
+}
+
+.socialLink {
+  color: rgb(143, 124, 55);
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.socialLinkNoactive {
+  color: rgb(99, 99, 99);
+}
+
+.socialLinkNoactive:hover {
+  text-decoration: none;
+}
+
+.profileContainerLeftBottomGroupSkill {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileContainerLeftBottomGroupItemSkills {
+  box-shadow: 0px 0px 5px 0.1px gray;
+  padding: 3px;
+  margin: 5px;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: rgb(233, 233, 233);
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+
+
+  .profileContainerLeft {
+    display: none;
+    width: 100%;
+  }
+
+  .profileContainerLeftResponsive {
+    margin-top: 40px;
+    display: block;
+  }
+
+  .profileContainerLeftTop {
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  .profileContainerLeftPortfolio {
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  .profileContainerLeftBottom {
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  .profileContainerRightProfilePicture {
+    left: 30%;
+  }
+
+  .profileEdit {
+    left: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profileContainerRightprojetContainer .ProductContainer {
+    width: 45%;
+    margin-left: 0px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .profileContainerRightprojetContainer .ProductContainer {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 330px) {
+  .profileContainerRight {
+    width: 310px;
+    ;
+  }
+}
+
+
+
+
+/* nodification */
+.profileContainerLeftPortfolio,
+.profileContainerLeftBottomGroupTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileContainerLeftPortfolioUpdate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border:1px solid rgba(255, 170, 0, 0.723);
+  border-radius: 50%;
+}
+
+.profileContainerLeftPortfolioUpdate:hover{
+  color:rgba(255, 170, 0, 0.723);
+}
+
+.profileContainerLeftBottomGroupAdd:hover{
+  color:rgba(0, 179, 255, 0.723);
+}
+
+.profileContainerLeftBottomGroupAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border:1px solid rgba(0, 179, 255, 0.723);
+  border-radius: 50%;
+  cursor: pointer;
+}

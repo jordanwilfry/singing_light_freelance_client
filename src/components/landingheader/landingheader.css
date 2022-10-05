@@ -1,0 +1,97 @@
+body{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#root{
+    width: 100%;
+    max-width: 1440px;
+  }
+
+.headerContainer{
+    background-color: transparent;
+    height: 50px;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    /* top: 0; */
+    z-index: 9;
+    /* position: -ms-page; */
+}
+
+.headerLeft{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.clickLogo{
+    cursor: pointer;
+}
+
+.headerLogo{
+    width: 200px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    object-fit: contain;
+}
+
+.LoginTexte{
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.LoginTexte:hover{
+    text-decoration: underline;
+}
+
+
+.btn-warning{
+    display: flex;
+    align-items: center;
+    padding: 4px 5px;
+    height: 30px;
+}
+
+#headerRegister{
+    margin-top: 0px;
+}
+
+.responsive_header{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    
+    body{
+        font-size: small;
+    }
+
+    .headerLogo{
+        width: 120px;
+    }
+    
+    .btn-warning{
+        display: flex;
+        align-items: center;
+        padding: 4px 5px;
+        height: 20px;
+        font-size: small;
+    }
+
+    .LoginTexte{
+        margin-right: 8px;
+    }
+  }

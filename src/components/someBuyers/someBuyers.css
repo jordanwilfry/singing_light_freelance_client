@@ -1,0 +1,35 @@
+.someBuyersContain {
+  box-shadow: 0px 0px 5px 0.1px gray;
+  width: 21%;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.someBuyersContainImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.someBuyersContainName {
+  margin: 10px;
+  float: right;
+  clear: both;
+}
+.someBuyersContainStory {
+  margin: 7px;
+  word-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .someBuyersContain {
+    width: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .someBuyersContain {
+    width: 88%;
+  }
+}

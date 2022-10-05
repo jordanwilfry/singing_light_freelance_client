@@ -1,0 +1,341 @@
+body{
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+#root{
+  width: 100%;
+  max-width: 1440px;
+}
+
+.responsiveSearch {
+  display: none;
+}
+
+.navIcon {
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px;
+  color: rgba(255, 196, 0, 0.685);
+  cursor: pointer;
+  margin: 0px 3px;
+}
+
+.navIcon:hover {
+  background-color: rgba(255, 214, 81, 0.083);
+}
+
+.navIconIcon {
+  font-size: 25px !important;
+}
+
+.headerContainer {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  height: 50px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.searchingFormH {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theSearchButton {
+  width: 200px;
+  height: 30px;
+  border: 1px solid gray;
+  border-right: none;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  color: rgba(131, 131, 131, 0.638);
+  display: flex;
+  align-items: center;
+}
+
+#theSearchButton:focus {
+  outline: none;
+}
+
+.searchingFormH button {
+  border: 1px solid gray;
+  border-left: none;
+  height: 30px;
+  width: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.headerLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.clickLogo {
+  cursor: pointer;
+}
+
+.headerLogo {
+  width: 200px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.headerRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.LoginTexte {
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.LoginTexte:hover {
+  text-decoration: underline;
+}
+
+.responsive_header {
+  display: none;
+}
+
+/* working with modal */
+#exampleModalDefault {
+  background-color: rgba(111, 126, 140, 0.2);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  color: black;
+}
+
+.modal-dialog {
+  min-width: 60vw;
+}
+
+.modal-body {
+  max-height: 90vh;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.modal_body_user{
+  padding: 10px;
+  margin-right: 1px;
+  border-right: 1px solid lightgray;
+  flex: 1;
+}
+
+.modal_body_user_title, .modal_body_gig_title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal_body_gig{
+  padding: 10px;
+  margin-left: 1px;
+  border-left: 1px solid lightgray;
+  flex: 1;
+}
+
+#modalSearchInput {
+  height: 30px;
+  width: 48vw;
+  border: none;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+#modalSearchInput:focus {
+  outline: none;
+}
+
+#modalSearchButton {
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  background-color: white;
+  color: rgb(255, 191, 73);
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#modalExitButton {
+  height: 30px;
+  width: 40px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: lightgrey;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+/* responsiveness */
+
+@media (max-width: 620px) {
+  body {
+    font-size: small;
+  }
+
+  .headerLogo {
+    width: 120px;
+  }
+
+  .LoginTexte {
+    margin-right: 8px;
+  }
+
+  .searchingFormH {
+    display: none;
+  }
+  .responsiveSearch {
+    display: block;
+  }
+
+  .navIcon {
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 5px;
+    color: rgba(255, 196, 0, 0.685);
+    cursor: pointer;
+    margin: 0px 5px;
+  }
+
+  .navIcon:hover {
+    background-color: rgba(255, 214, 81, 0.083);
+  }
+
+  .navIconIcon {
+    font-size: 20px !important;
+  }
+
+  #modalSearchInput {
+    height: 30px;
+    width: 40vw;
+    border: none;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #modalSearchButton {
+    font-size: 20px;
+  }
+
+  #modalExitButton {
+    height: 20px;
+    width: 30px;
+    padding: 3px;
+    font-size: 12px;
+  }
+  
+  .modal-body{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1600px){
+  #modalExitButton {
+    height: 30px;
+    width: 50px;
+    padding: 3px;
+    font-size: 18px;
+  }
+
+  .searchingFormH button {
+    border: 1px solid gray;
+    border-left: none;
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+.searchItem{
+  display: flex;
+  margin: 7px 5px;
+  padding: 3px;
+  box-shadow: 0px 0px 2px 0.1px gray;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.searchItem:hover{
+  box-shadow: 0px 0px 5px 0.1px gray;
+  cursor: pointer;
+}
+
+.searchImage{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right : 10px;
+}
+
+
+/*  */
+.Notification-Chart-Header-Modal{
+  width: min(300px, 95vw);
+  height: min(400px, 80vh);
+  position: relative;
+}
+
+.headerMessagesHeader{
+  height: 10%;
+}
+
+.headerMessagesBody{
+  margin-bottom: 22px;
+}
+
+.headerMessagesFooter{
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerMessagesFooterAllChat{
+  color: rgba(222, 146, 5, 0.679);
+  cursor: pointer;
+}
+
+.headerMessagesFooterAllChat:hover{
+  color: rgb(222, 146, 5);
+}
