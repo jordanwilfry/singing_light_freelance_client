@@ -19,11 +19,15 @@ function LandingPage() {
   const [catProTech, setcatProTech] = useState(null);
   const [catDesign, setcatDesign] = useState(null);
 
+
+  console.log(process.env.BACKEND_URL);
+  console.log(process.env.REACT_APP_PUBLIC_FOLDER);
+
   useEffect(() => {
     const fetProduct = async () => {
-      const Maketingres = await axios.get(`/project/in/marketing`);
-      const ProTechres = await axios.get(`/project/in/programing`);
-      const Designres = await axios.get(`/project/in/design`);
+      const Maketingres = await axios.get(`${process.env.BACKEND_URL}/project/in/marketing`);
+      const ProTechres = await axios.get(`https://sore-tan-tick-veil.cyclic.app/project/in/programing`);
+      const Designres = await axios.get(`https://sore-tan-tick-veil.cyclic.app/project/in/design`);
       setcatMaketing(Maketingres.data);
       setcatProTech(ProTechres.data);
       setcatDesign(Designres.data);

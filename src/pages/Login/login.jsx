@@ -33,7 +33,7 @@ function Login() {
 
     setLogin(true)
 
-    const res = await axios.post("/auth/login",
+    const res = await axios.post("https://sore-tan-tick-veil.cyclic.app/auth/login",
       {
         email: LoginEmail.current.value,
         password: LoginPassworrd.current.value
